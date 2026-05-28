@@ -1,0 +1,27 @@
+﻿{
+  "name": "studio7-site.vs",
+  "version": "1.0.0",
+  "description": "Site institucional Studio7 com galeria premium em React.",
+  "scripts": {
+    "build": "npm run build:gallery",
+    "build:gallery": "node ./scripts/build-gallery.cjs",
+    "watch:gallery": "node ./scripts/build-gallery.cjs --watch",
+    "server": "node ./servidor/server.js",
+    "hash:admin-password": "node ./servidor/scripts/gerar-admin-password-hash.cjs",
+    "migrate:mysql:leads": "node ./servidor/scripts/migrar-leads-json-para-mysql.cjs",
+    "migrate:mysql:runtime": "node ./servidor/scripts/migrar-runtime-json-para-mysql.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "esbuild": "^0.27.4",
+    "framer-motion": "^12.38.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
